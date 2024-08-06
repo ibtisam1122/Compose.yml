@@ -1,0 +1,10 @@
+version: '2.24'
+name: "my_py"
+
+services:
+  api:
+    build: 
+      context: "./kafka_ui"
+      dockerfile: "Dockerfile"
+    ports:
+      - "8000:8000"
